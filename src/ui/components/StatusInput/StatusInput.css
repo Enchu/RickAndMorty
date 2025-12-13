@@ -1,0 +1,39 @@
+.input {
+  width: 240px;
+  height: 56px;
+  display: flex;
+  gap: 8px;
+  padding: 16px;
+  box-sizing: border-box;
+
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.input_title {
+  display: flex;
+  align-items: center;
+  width: 176px;
+  height: 24px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.input_icon {
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+}
+
+.input_icon svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
