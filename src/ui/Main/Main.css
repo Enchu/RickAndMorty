@@ -1,7 +1,26 @@
+.loading {
+  display: flex;
+  flex-direction: column;
+}
+
+.loading h2 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: #212121;
+}
+
+.loading__icon {
+  width: 475px;
+  height: 465px;
+}
+
 .main {
   display: flex;
   flex-direction: column;
   margin: 26px 0 26px 0;
+  align-items: center;
 }
 
 .main_logo {
@@ -15,4 +34,8 @@
   flex-direction: row;
   margin: 16px 0 28px 0;
   gap: 28px;
+}
+
+.main_pagination {
+  margin-top: 34px;
 }

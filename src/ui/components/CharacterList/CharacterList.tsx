@@ -1,5 +1,5 @@
 import './CharacterList.css';
-import Media from '../../../assets/Media.png';
+import Media from '../../../icons/icon/Media.png';
 import { Status } from '../../../icons';
 
 export const Gender = {

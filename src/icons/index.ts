@@ -1,10 +1,10 @@
-import { Logo } from './Logo';
-import { Filter } from './Filter';
-import { StatusDown } from './StatusDown';
-import { StatusUp } from './StatusUp';
-import { Status } from './Status';
-import { Back } from './Back';
-import { Sun } from './Sun';
+import { Logo } from './icon/Logo';
+import { Filter } from './icon/Filter';
+import { StatusDown } from './icon/StatusDown';
+import { StatusUp } from './icon/StatusUp';
+import { Status } from './icon/Status';
+import { Back } from './icon/Back';
+import { Sun } from './icon/Sun';
 
 //import { icons } from './config';
 

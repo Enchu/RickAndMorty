@@ -1,4 +1,4 @@
-import { Svg, type IconProps } from './Svg';
+import { Svg, type IconProps } from '../Svg';
 
 export const StatusUp = ({ ...props }: IconProps) => {
   return (

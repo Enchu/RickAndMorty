@@ -1,8 +1,22 @@
+import React, { Suspense } from 'react';
 import './Main.css';
-import Logo from '../../assets/Logo.svg?react';
 import FilterInput from '../components/FilterInput/FilterInput';
 import { StatusInput } from '../components';
-import MainList from '../MainList/MainList';
+
+import Logo from '../../icons/icon/Logo.svg?react';
+import BigLoading from '../../icons/icon/BigLoading.svg?react';
+import SmallLoading from '../../icons/icon/SmallLoading.svg?react';
+
+const MainList = React.lazy(() => import('../MainList/MainList'));
+
+function Loading() {
+  return (
+    <div className='loading'>
+      <BigLoading className='loading__icon' />
+      <h2>🌀 Loading character card...</h2>;
+    </div>
+  );
+}
 
 const Main = () => {
   return (
@@ -18,7 +32,13 @@ const Main = () => {
         <StatusInput title='Status' />
       </div>
 
-      <MainList />
+      <Suspense fallback={<Loading />}>
+        <MainList />
+      </Suspense>
+
+      <div className='main_pagination'>
+        <SmallLoading className='main_loading' />
+      </div>
     </div>
   );
 };

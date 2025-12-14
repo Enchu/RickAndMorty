@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 import './CharacterInfo.css';
-import BigLoading from '../../../assets/BigLoading.svg?react';
+import BigLoading from '../../../icons/icon/BigLoading.svg?react';
 import { Back } from '../../../icons';
 import { redirect } from 'react-router-dom';
 
