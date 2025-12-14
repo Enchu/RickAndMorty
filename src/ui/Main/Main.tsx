@@ -4,19 +4,10 @@ import FilterInput from '../components/FilterInput/FilterInput';
 import { StatusInput } from '../components';
 
 import Logo from '../../icons/icon/Logo.svg?react';
-import BigLoading from '../../icons/icon/BigLoading.svg?react';
 import SmallLoading from '../../icons/icon/SmallLoading.svg?react';
+import Loading from '../components/Loading/Loading';
 
 const MainList = React.lazy(() => import('../MainList/MainList'));
-
-function Loading() {
-  return (
-    <div className='loading'>
-      <BigLoading className='loading__icon' />
-      <h2>🌀 Loading character card...</h2>;
-    </div>
-  );
-}
 
 const Main = () => {
   return (

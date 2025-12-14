@@ -1,20 +1,8 @@
 import { Suspense } from 'react';
 import './CharacterInfo.css';
-import BigLoading from '../../../icons/icon/BigLoading.svg?react';
 import { Back } from '../../../icons';
 import { redirect } from 'react-router-dom';
-
-// Dynamic import
-//const CatAvatar = React.lazy(() => import('./path/to/cat/avatar'));
-
-function Loading() {
-  return (
-    <div className='loading'>
-      <BigLoading className='loading__icon' />
-      <h2>🌀 Loading character card...</h2>;
-    </div>
-  );
-}
+import Loading from '../Loading/Loading';
 
 const CharacterInfo = () => {
   return (
