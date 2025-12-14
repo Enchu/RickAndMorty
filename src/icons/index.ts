@@ -5,9 +5,10 @@ import { StatusUp } from './icon/StatusUp';
 import { Status } from './icon/Status';
 import { Back } from './icon/Back';
 import { Sun } from './icon/Sun';
+import { Divider } from './icon/Divider';
 
 //import { icons } from './config';
 
-export { Logo, Filter, StatusDown, StatusUp, Status, Back, Sun };
+export { Logo, Filter, StatusDown, StatusUp, Status, Back, Sun, Divider };
 
 export type { IconProps } from './Svg';
