@@ -15,8 +15,8 @@ const CharacterInfo = () => {
         onClick={() => navigate(-1)}
       >
         <Back
-          height={24}
-          width={24}
+          height={16}
+          width={16}
         />
         <h2>GO BACK</h2>
       </div>

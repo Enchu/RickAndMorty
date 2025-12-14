@@ -9,6 +9,7 @@
   gap: 8px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .character__back h2 {
