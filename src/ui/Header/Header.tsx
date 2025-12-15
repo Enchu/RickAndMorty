@@ -1,4 +1,4 @@
-import { Logo, Sun } from '../../icons';
+import { SmallLogo, Sun } from '../../icons';
 import './Header.css';
 
 const Header = () => {
@@ -6,7 +6,7 @@ const Header = () => {
     <header className='header'>
       <div className='container header_top'>
         <div className='header_logo'>
-          <Logo
+          <SmallLogo
             width={48}
             height={50}
           />

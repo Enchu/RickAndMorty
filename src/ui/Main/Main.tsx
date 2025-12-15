@@ -1,12 +1,11 @@
-import React, { Suspense } from 'react';
+import { Suspense } from 'react';
 import './Main.css';
 import FilterInput from '../components/FilterInput/FilterInput';
 import { StatusInput } from '../components';
 import Logo from '../../icons/icon/Logo.svg?react';
 import SmallLoading from '../../icons/icon/SmallLoading.svg?react';
 import Loading from '../components/Loading/Loading';
-
-const MainList = React.lazy(() => import('../MainList/MainList'));
+import MainList from '../MainList/MainList';
 
 const Main = () => {
   return (

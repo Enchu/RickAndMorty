@@ -1,6 +1,6 @@
 import './CharacterList.css';
 import Media from '../../../icons/icon/Media.png';
-import { Status } from '../../../icons';
+import { EllipseGreen } from '../../../icons';
 
 export const Gender = {
   male: 'Male',
@@ -29,7 +29,7 @@ const CharacterList = ({
       <div className='character_image'>
         <img
           src={Media}
-          alt='Персонаж'
+          alt='Character logo'
         />
       </div>
       <div className='character_list'>
@@ -50,7 +50,7 @@ const CharacterList = ({
           <p>Status</p>
           <div className='character_list_item-status'>
             <h3>{status}</h3>
-            <Status
+            <EllipseGreen
               width={10}
               height={10}
               fill='#12B800'

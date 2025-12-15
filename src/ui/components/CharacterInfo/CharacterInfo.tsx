@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 import './CharacterInfo.css';
-import { Back } from '../../../icons';
+import { ArrowBack } from '../../../icons';
 import { useNavigate } from 'react-router-dom';
 import Loading from '../Loading/Loading';
 import Media from '../../../icons/icon/Media.png';
@@ -14,7 +14,7 @@ const CharacterInfo = () => {
         className='character__back'
         onClick={() => navigate(-1)}
       >
-        <Back
+        <ArrowBack
           height={16}
           width={16}
         />
@@ -25,7 +25,7 @@ const CharacterInfo = () => {
           <div className='info__image'>
             <img
               src={Media}
-              alt='Персонаж'
+              alt='Rick Sanchez logo'
             />
           </div>
           <div className='info__container-title'>

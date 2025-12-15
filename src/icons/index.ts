@@ -1,14 +1,21 @@
-import { Logo } from './icon/Logo';
-import { Filter } from './icon/Filter';
-import { StatusDown } from './icon/StatusDown';
-import { StatusUp } from './icon/StatusUp';
-import { Status } from './icon/Status';
-import { Back } from './icon/Back';
-import { Sun } from './icon/Sun';
-import { Divider } from './icon/Divider';
+import Logo from './icon/Logo.svg?react';
+import BigLoading from './icon/BigLoading.svg?react';
+import SmallLoading from './icon/SmallLoading.svg?react';
+import Sun from './icon/Sun.svg?react';
+import Filter from './icon/Filter.svg?react';
+import StatusDown from './icon/StatusDown.svg?react';
+import EllipseGreen from './icon/EllipseGreen.svg?react';
+import ArrowBack from './icon/ArrowBack.svg?react';
+import SmallLogo from './icon/SmallLogo.svg?react';
 
-//import { icons } from './config';
-
-export { Logo, Filter, StatusDown, StatusUp, Status, Back, Sun, Divider };
-
-export type { IconProps } from './Svg';
+export {
+  Logo,
+  BigLoading,
+  SmallLoading,
+  Sun,
+  Filter,
+  StatusDown,
+  EllipseGreen,
+  ArrowBack,
+  SmallLogo
+};
