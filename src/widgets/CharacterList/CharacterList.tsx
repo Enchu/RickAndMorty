@@ -1,6 +1,6 @@
 import './CharacterList.css';
-import Media from '../../../icons/icon/Media.png';
-import { EllipseGreen } from '../../../icons';
+import Media from '../../assets/icons/Media.png';
+import { EllipseGreen } from '../../assets';
 
 export const Gender = {
   male: 'Male',
@@ -54,6 +54,7 @@ const CharacterList = ({
               width={10}
               height={10}
               fill='#12B800'
+              aria-label='Status logo'
             />
           </div>
         </div>

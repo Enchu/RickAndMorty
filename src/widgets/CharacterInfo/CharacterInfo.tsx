@@ -1,9 +1,9 @@
 import { Suspense } from 'react';
 import './CharacterInfo.css';
-import { ArrowBack } from '../../../icons';
+import { ArrowBack } from '../../assets';
 import { useNavigate } from 'react-router-dom';
 import Loading from '../Loading/Loading';
-import Media from '../../../icons/icon/Media.png';
+import Media from '../../assets/icons/Media.png';
 
 const CharacterInfo = () => {
   const navigate = useNavigate();
@@ -17,6 +17,7 @@ const CharacterInfo = () => {
         <ArrowBack
           height={16}
           width={16}
+          aria-label='Back to previous page'
         />
         <h2>GO BACK</h2>
       </div>

@@ -1,4 +1,4 @@
-import { StatusDown } from '../../../icons';
+import { StatusDown } from '../../assets';
 import './StatusInput.css';
 
 type StatusInputProps = {

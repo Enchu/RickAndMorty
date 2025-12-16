@@ -1,5 +1,5 @@
 import './Loading.css';
-import BigLoading from '../../../icons/icon/BigLoading.svg?react';
+import BigLoading from '../../assets/icons/BigLoading.svg?react';
 
 const Loading = () => {
   return (

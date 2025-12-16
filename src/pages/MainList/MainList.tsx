@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { CharacterList } from '../components';
+import { CharacterList } from '../../widgets';
 import './MainList.css';
 
 const MainList = () => {

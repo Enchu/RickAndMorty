@@ -1,4 +1,4 @@
-import { Filter } from '../../../icons';
+import { Filter } from '../../assets';
 import './FileInput.css';
 
 const FilterInput = () => {

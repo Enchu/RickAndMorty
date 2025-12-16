@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
-import Main from '../ui/Main/Main';
-import { CharacterInfo } from '../ui/components';
+import Main from '../pages/Main/Main';
+import { CharacterInfo } from '../widgets';
 
 const AppRoutes = () => {
   const navigationRoutes = [

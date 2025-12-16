@@ -1,4 +1,4 @@
-import { SmallLogo, Sun } from '../../icons';
+import { SmallLogo, Sun } from '../../assets';
 import './Header.css';
 
 const Header = () => {
@@ -9,6 +9,7 @@ const Header = () => {
           <SmallLogo
             width={48}
             height={50}
+            aria-label='Rick and Morty logo'
           />
         </div>
 
@@ -17,6 +18,7 @@ const Header = () => {
             <Sun
               width={25}
               height={25}
+              aria-label='Sun logo'
             />
           </div>
           <div className='header_sun'>
