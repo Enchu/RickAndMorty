@@ -1,8 +1,8 @@
-.info {
+.character-info {
   position: relative;
 }
 
-.character__back {
+.character-info__back {
   position: absolute;
   top: 16px;
   display: flex;
@@ -12,14 +12,14 @@
   cursor: pointer;
 }
 
-.character__back h2 {
+.character-info__back h2 {
   font-family: var(--second-family);
   font-weight: 700;
   font-size: 18px;
   color: #000;
 }
 
-.info__container {
+.character-info__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,14 +28,14 @@
   margin: 16px 0 16px 0;
 }
 
-.info__image img {
+.character-info__image img {
   border: 5px solid #f2f2f7;
   border-radius: 150px;
   width: 290px;
   height: 290px;
 }
 
-.info__container-title {
+.character-info__container-title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,7 +44,7 @@
   height: 50px;
 }
 
-.info__title {
+.character-info__title {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 48px;
@@ -52,7 +52,7 @@
   color: #081f32;
 }
 
-.info__subtitle {
+.character-info__subtitle {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 20px;
@@ -61,14 +61,14 @@
   color: #8e8e93;
 }
 
-.info__list {
+.character-info__list {
   display: flex;
   flex-direction: column;
   width: 413px;
   height: 384px;
 }
 
-.info__list-item {
+.character-info__list-item {
   width: 413px;
   height: 64px;
   display: flex;
@@ -77,7 +77,7 @@
   position: relative;
 }
 
-.info__list-item::before {
+.character-info__list-item::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -87,7 +87,7 @@
   background-color: #e4e4e6;
 }
 
-.info__list-item p {
+.character-info__list-item p {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 16px;
@@ -96,7 +96,7 @@
   color: #081f32;
 }
 
-.info__list-item h3 {
+.character-info__list-item h3 {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;

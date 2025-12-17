@@ -13,7 +13,7 @@
   border-radius: 8px;
 }
 
-.input_title {
+.input__title {
   display: flex;
   align-items: center;
   width: 176px;
@@ -25,14 +25,14 @@
   color: rgba(0, 0, 0, 0.6);
 }
 
-.input_icon {
+.input__icon {
   width: 24px;
   height: 24px;
   display: grid;
   place-items: center;
 }
 
-.input_icon svg {
+.input__icon svg {
   width: 24px;
   height: 24px;
   display: block;

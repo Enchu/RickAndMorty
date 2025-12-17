@@ -1,19 +1,19 @@
 import { Suspense } from 'react';
 import './Main.css';
-import Logo from '../../assets/icons/Logo.svg?react';
-import SmallLoading from '../../assets/icons/SmallLoading.svg?react';
+import Logo from '@/assets/icons/Logo.svg?react';
+import SmallLoading from '@/assets/icons/SmallLoading.svg?react';
 import MainList from '../MainList/MainList';
-import Loading from '../../widgets/Loading/Loading';
-import { FilterInput, StatusInput } from '../../widgets';
+import Loading from '@/widgets/Loading/Loading';
+import { FilterInput, StatusInput } from '@/widgets';
 
 const Main = () => {
   return (
     <div className='main'>
-      <div className='main_logo'>
+      <div className='main__logo'>
         <Logo aria-label='Rick and Morty logo' />
       </div>
 
-      <div className='main_filtered'>
+      <div className='main__filtered'>
         <FilterInput />
         <StatusInput title='Species' />
         <StatusInput title='Gender' />
@@ -24,7 +24,7 @@ const Main = () => {
         <MainList />
       </Suspense>
 
-      <div className='main_pagination'>
+      <div className='main__pagination'>
         <SmallLoading
           className='main_loading'
           aria-label='Loading logo'

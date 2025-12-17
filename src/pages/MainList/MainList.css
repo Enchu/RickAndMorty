@@ -1,4 +1,4 @@
-.main_list {
+.main__list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

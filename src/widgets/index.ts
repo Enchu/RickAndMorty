@@ -1,7 +1,7 @@
 import FilterInput from './FilterInput/FilterInput';
 import StatusInput from './StatusInput/StatusInput';
-import CharacterList from './CharacterList/CharacterList';
+import CharacterCard from './CharacterList/CharacterCard';
 import CharacterInfo from './CharacterInfo/CharacterInfo';
-import { Gender } from './CharacterList/CharacterList';
+import { Gender } from './CharacterList/CharacterCard';
 
-export { FilterInput, StatusInput, CharacterList, CharacterInfo, Gender };
+export { FilterInput, StatusInput, CharacterCard, CharacterInfo, Gender };

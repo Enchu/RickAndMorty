@@ -1,36 +1,36 @@
 import { useNavigate } from 'react-router-dom';
-import { CharacterList } from '../../widgets';
 import './MainList.css';
+import { CharacterCard } from '@/widgets';
 
 const MainList = () => {
   const navigate = useNavigate();
   return (
     <div
-      className='main_list'
+      className='main__list'
       onClick={() => navigate('/info')}
     >
-      <CharacterList
+      <CharacterCard
         title='Rick Sanchez'
         gender='Male'
         species='Human'
         location='Earth'
         status='Alive'
       />
-      <CharacterList
+      <CharacterCard
         title='Rick Sanchez'
         gender='Male'
         species='Human'
         location='Earth'
         status='Alive'
       />
-      <CharacterList
+      <CharacterCard
         title='Rick Sanchez'
         gender='Male'
         species='Human'
         location='Earth'
         status='Alive'
       />
-      <CharacterList
+      <CharacterCard
         title='Rick Sanchez'
         gender='Male'
         species='Human'

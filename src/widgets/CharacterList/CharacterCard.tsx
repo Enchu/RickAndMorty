@@ -1,4 +1,4 @@
-import './CharacterList.css';
+import './CharacterCard.css';
 import Media from '../../assets/icons/Media.png';
 import { EllipseGreen } from '../../assets';
 
@@ -9,7 +9,7 @@ export const Gender = {
 
 export type Gender = (typeof Gender)[keyof typeof Gender];
 
-type CharacterListProps = {
+type CharacterCardProps = {
   title: string;
   gender: Gender;
   species: string;
@@ -17,38 +17,38 @@ type CharacterListProps = {
   status: string;
 };
 
-const CharacterList = ({
+const CharacterCard = ({
   title,
   gender,
   species,
   location,
   status
-}: CharacterListProps) => {
+}: CharacterCardProps) => {
   return (
     <div className='character'>
-      <div className='character_image'>
+      <div className='character__image'>
         <img
           src={Media}
           alt='Character logo'
         />
       </div>
-      <div className='character_list'>
-        <h2 className='character_list-title'>{title}</h2>
-        <div className='character_list_item'>
+      <div className='character__info'>
+        <h2 className='character__name'>{title}</h2>
+        <div className='character__info-item'>
           <p>Gender</p>
           <h3>{gender}</h3>
         </div>
-        <div className='character_list_item'>
+        <div className='character__info-item'>
           <p>Species</p>
           <h3>{species}</h3>
         </div>
-        <div className='character_list_item'>
+        <div className='character__info-item'>
           <p>Location</p>
           <h3>{location}</h3>
         </div>
-        <div className='character_list_item'>
+        <div className='character__info-item'>
           <p>Status</p>
-          <div className='character_list_item-status'>
+          <div className='character__status'>
             <h3>{status}</h3>
             <EllipseGreen
               width={10}
@@ -63,4 +63,4 @@ const CharacterList = ({
   );
 };
 
-export default CharacterList;
+export default CharacterCard;

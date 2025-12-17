@@ -5,12 +5,12 @@
   align-items: center;
 }
 
-.main_logo {
+.main__logo {
   display: flex;
   justify-content: center;
 }
 
-.main_filtered {
+.main__filtered {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -18,6 +18,6 @@
   gap: 28px;
 }
 
-.main_pagination {
+.main__pagination {
   margin-top: 34px;
 }
