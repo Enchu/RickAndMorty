@@ -1,9 +1,9 @@
-import { Suspense } from 'react';
 import './CharacterInfo.css';
-import { ArrowBack } from '@/assets';
+import { Suspense } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { ArrowBack } from '@/assets';
 import Media from '@/assets/icons/Media.png';
-import Loading from '../Loading/Loading';
+import Loading from '@/shared/components/Loading/Loading';
 
 const CharacterInfo = () => {
   const navigate = useNavigate();

@@ -1,14 +1,9 @@
-import { useNavigate } from 'react-router-dom';
+import { CharacterCard } from '@/shared/components';
 import './MainList.css';
-import { CharacterCard } from '@/widgets';
 
 const MainList = () => {
-  const navigate = useNavigate();
   return (
-    <div
-      className='main__list'
-      onClick={() => navigate('/info')}
-    >
+    <div className='main__list'>
       <CharacterCard
         title='Rick Sanchez'
         gender='Male'

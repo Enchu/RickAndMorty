@@ -1,7 +1,6 @@
-import { Suspense } from 'react';
 import './App.css';
-import Footer from './pages/Footer/Footer';
-import Header from './pages/Header/Header';
+import Footer from './shared/components/Footer/Footer';
+import Header from './shared/components/Header/Header';
 import AppRoutes from './routes/routes';
 
 function App() {
@@ -10,9 +9,7 @@ function App() {
       <Header />
       <main className='app_main'>
         <div className='container'>
-          <Suspense>
-            <AppRoutes />
-          </Suspense>
+          <AppRoutes />
         </div>
       </main>
       <Footer />

@@ -1,11 +1,10 @@
 import './Footer.css';
+import { LABELS } from '@/shared/constants';
 
 const Footer = () => {
   return (
     <footer className='footer'>
-      <div className='footer__title'>
-        <h1>Made with love by Kishin</h1>
-      </div>
+      <p className='footer__title'>{LABELS.credentials}</p>
     </footer>
   );
 };
