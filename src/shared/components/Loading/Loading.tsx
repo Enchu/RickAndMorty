@@ -1,4 +1,5 @@
 import { BigLoading } from '@/assets';
+
 import './Loading.css';
 
 const Loading = () => {

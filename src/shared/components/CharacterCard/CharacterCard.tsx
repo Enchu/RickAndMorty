@@ -1,6 +1,8 @@
-import './CharacterCard.css';
-import Media from '@/assets/icons/Media.png';
 import { useNavigate } from 'react-router-dom';
+
+import Media from '@/assets/icons/Media.png';
+
+import './CharacterCard.css';
 
 export const Gender = {
   male: 'Male',
@@ -55,12 +57,6 @@ const CharacterCard = ({
           <div className='character__status'>
             <h3>{status}</h3>
             <div className='character__status-indicator' />
-            {/* <EllipseGreen
-              width={10}
-              height={10}
-              fill='#12B800'
-              aria-label='Status logo'
-            /> */}
           </div>
         </div>
       </div>
