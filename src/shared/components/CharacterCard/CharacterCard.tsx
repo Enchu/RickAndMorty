@@ -2,6 +2,8 @@ import { useNavigate } from 'react-router-dom';
 
 import Media from '@/assets/icons/Media.png';
 
+import Status from '../Status/Status';
+
 import './CharacterCard.css';
 
 export const Gender = {
@@ -27,6 +29,7 @@ const CharacterCard = ({
   status
 }: CharacterCardProps) => {
   const navigate = useNavigate();
+
   return (
     <div
       className='character'
@@ -56,7 +59,7 @@ const CharacterCard = ({
           <p>Status</p>
           <div className='character__status'>
             <h3>{status}</h3>
-            <div className='character__status-indicator' />
+            <Status status={status} />
           </div>
         </div>
       </div>

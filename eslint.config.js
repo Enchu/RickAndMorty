@@ -18,7 +18,7 @@ export default defineConfig([
       ...tseslint.configs.recommended,
       reactHooks.configs.flat.recommended,
       reactRefresh.configs.vite,
-      eslintConfigPrettier // ВСЕГДА последним
+      eslintConfigPrettier
     ],
 
     languageOptions: {
@@ -28,34 +28,21 @@ export default defineConfig([
 
     plugins: {
       prettier,
-      'simple-import-sort': simpleImportSort // ✅ ВОТ ЭТО КЛЮЧЕВО
+      'simple-import-sort': simpleImportSort
     },
 
     rules: {
       'prettier/prettier': 'error',
-
-      // 🔥 сортировка импортов
       'simple-import-sort/imports': [
         'error',
         {
           groups: [
-            // 1️⃣ react
             ['^react$'],
-
-            // 2️⃣ react ecosystem
             ['^react-', '^@react', '^@tanstack', '^@reduxjs'],
-
-            // 3️⃣ другие сторонние библиотеки
             ['^@?\\w'],
-
-            // 4️⃣ алиасы проекта
             ['^@/'],
-
-            // 5️⃣ относительные импорты
             ['^\\.\\.(?!/?$)', '^\\.\\./?$'],
             ['^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$'],
-
-            // 6️⃣ стили
             ['^.+\\.s?css$']
           ]
         }

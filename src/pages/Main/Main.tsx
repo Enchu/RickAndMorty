@@ -1,28 +1,14 @@
 import { Banner, SmallLoading } from '@/assets';
-import { FilterInput, StatusInput } from '@/shared/components';
+import { FilterInput, Select, Status } from '@/shared/components';
+import {
+  GENDER_OPTIONS,
+  SPECIES_OPTIONS,
+  STATUS_OPTIONS
+} from '@/shared/constants';
 
 import MainList from '../../shared/components/MainList/MainList';
 
 import './Main.css';
-
-const SPECIES_OPTIONS = [
-  { value: 'Human' },
-  { value: 'Alien' },
-  { value: 'Humanoid' },
-  { value: 'Animal' },
-  { value: 'Robot' }
-];
-const GENDER_OPTIONS = [
-  { value: 'Female' },
-  { value: 'Male' },
-  { value: 'Genderless' },
-  { value: 'Unknown' }
-];
-const STATUS_OPTIONS = [
-  { value: 'Alive' },
-  { value: 'Dead' },
-  { value: 'Unknown' }
-];
 
 const Main = () => {
   return (
@@ -35,17 +21,26 @@ const Main = () => {
 
       <div className='main__filtered'>
         <FilterInput />
-        <StatusInput
-          title='Species'
+        <Select
+          placeholder='Species'
           options={SPECIES_OPTIONS}
+          onChange={() => {}}
+          value={''}
+          variant='big'
         />
-        <StatusInput
-          title='Gender'
+        <Select
+          placeholder='Gender'
           options={GENDER_OPTIONS}
+          onChange={() => {}}
+          value={''}
+          variant='big'
         />
-        <StatusInput
-          title='Status'
+        <Select
+          placeholder='Status'
           options={STATUS_OPTIONS}
+          onChange={() => {}}
+          value={''}
+          variant='big'
         />
       </div>
 
