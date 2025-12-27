@@ -1,5 +1,5 @@
 import { Banner, SmallLoading } from '@/assets';
-import { FilterInput, Select, Status } from '@/shared/components';
+import { FilterInput, Select } from '@/shared/components';
 import {
   GENDER_OPTIONS,
   SPECIES_OPTIONS,
