@@ -8,14 +8,14 @@
   margin-left: 5px;
 }
 
-.status-Alive {
+.status-alive {
   background-color: #12b800;
 }
 
-.status-Dead {
+.status-dead {
   background-color: #df0000;
 }
 
-.status-Unknown {
+.status-unknown {
   background-color: #ff9900;
 }

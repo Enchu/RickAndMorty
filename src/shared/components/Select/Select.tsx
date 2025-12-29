@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-import { StatusDown, StatusUp } from '@/assets';
+import { ArrowDown, ArrowUp } from '@/assets';
 
 import './Select.css';
 
@@ -64,12 +64,7 @@ const Select = <T,>(props: SelectProps<T>) => {
       return;
     }
 
-    if (option.value === value) {
-      onChange('' as T);
-    } else {
-      onChange(option.value);
-    }
-
+    onChange(option.value);
     setIsOpen(false);
   };
 
@@ -102,7 +97,7 @@ const Select = <T,>(props: SelectProps<T>) => {
           )}
         </div>
 
-        {isOpen ? <StatusUp /> : <StatusDown />}
+        {isOpen ? <ArrowUp /> : <ArrowDown />}
       </div>
       {isOpen && <div className='select__dropdown'>{optionsList}</div>}
     </div>
