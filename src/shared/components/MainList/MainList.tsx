@@ -1,4 +1,5 @@
 import { CharacterCard } from '@/shared/components';
+
 import './MainList.css';
 
 const MainList = () => {

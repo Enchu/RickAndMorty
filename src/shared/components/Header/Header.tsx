@@ -1,6 +1,7 @@
-import './Header.css';
 import { SmallLogo, Sun } from '@/assets';
 import { LABELS } from '@/shared/constants';
+
+import './Header.css';
 
 const Header = () => {
   return (

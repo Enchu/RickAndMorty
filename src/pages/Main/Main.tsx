@@ -1,7 +1,14 @@
-import './Main.css';
-import MainList from '../../shared/components/MainList/MainList';
-import { FilterInput, StatusInput } from '@/shared/components';
 import { Banner, SmallLoading } from '@/assets';
+import { FilterInput, Select } from '@/shared/components';
+import {
+  GENDER_OPTIONS,
+  SPECIES_OPTIONS,
+  STATUS_OPTIONS
+} from '@/shared/constants';
+
+import MainList from '../../shared/components/MainList/MainList';
+
+import './Main.css';
 
 const Main = () => {
   return (
@@ -14,9 +21,27 @@ const Main = () => {
 
       <div className='main__filtered'>
         <FilterInput />
-        <StatusInput title='Species' />
-        <StatusInput title='Gender' />
-        <StatusInput title='Status' />
+        <Select
+          placeholder='Species'
+          options={SPECIES_OPTIONS}
+          onChange={() => {}}
+          value={''}
+          variant='big'
+        />
+        <Select
+          placeholder='Gender'
+          options={GENDER_OPTIONS}
+          onChange={() => {}}
+          value={''}
+          variant='big'
+        />
+        <Select
+          placeholder='Status'
+          options={STATUS_OPTIONS}
+          onChange={() => {}}
+          value={''}
+          variant='big'
+        />
       </div>
 
       <MainList />

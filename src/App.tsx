@@ -1,7 +1,8 @@
-import './App.css';
+import AppRoutes from './routes/routes';
 import Footer from './shared/components/Footer/Footer';
 import Header from './shared/components/Header/Header';
-import AppRoutes from './routes/routes';
+
+import './App.css';
 
 function App() {
   return (
