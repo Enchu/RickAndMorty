@@ -1,0 +1,52 @@
+.filter {
+  position: relative;
+  font-family: var(--font-family);
+  max-width: 240px;
+  max-height: 56px;
+
+  display: flex;
+  padding: 15px;
+  box-sizing: border-box;
+
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.filter__search {
+  width: 24px;
+  height: 24px;
+}
+
+.filter__close {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.filter__close--hidden {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.filter__input {
+  border: none;
+  outline: none;
+  margin-left: 8px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000;
+}
+
+.filter__input--small {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.87);
+}
