@@ -15,10 +15,6 @@ import './Main.css';
 const Main = () => {
   const [filterValue, setFilterValue] = useState<string>('');
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFilterValue(e.target.value);
-  };
-
   return (
     <div className='main'>
       <img
@@ -31,7 +27,7 @@ const Main = () => {
         <FilterInput
           placeholder='Filter by name...'
           value={filterValue}
-          onChange={handleInputChange}
+          onChange={setFilterValue}
           icon={<Search />}
           size='big'
         />
