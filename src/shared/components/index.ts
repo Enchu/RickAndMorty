@@ -4,13 +4,13 @@ import Loading from '../components/Loading/Loading';
 
 import CharacterCard from './CharacterCard/CharacterCard';
 import { Gender } from './CharacterCard/CharacterCard';
-import FilterInput from './FilterInput/FilterInput';
+import Filter from './FilterInput/Filter';
 import Select from './Select/Select';
 import Status from './Status/Status';
 
 export {
   CharacterCard,
-  FilterInput,
+  Filter as FilterInput,
   Footer,
   Gender,
   Header,

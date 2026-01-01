@@ -1,4 +1,6 @@
-import { Banner, SmallLoading } from '@/assets';
+import { useState } from 'react';
+
+import { Banner, Search, SmallLoading } from '@/assets';
 import { FilterInput, Select } from '@/shared/components';
 import {
   GENDER_OPTIONS,
@@ -11,6 +13,8 @@ import MainList from '../../shared/components/MainList/MainList';
 import './Main.css';
 
 const Main = () => {
+  const [filterValue, setFilterValue] = useState<string>('');
+
   return (
     <div className='main'>
       <img
@@ -20,7 +24,13 @@ const Main = () => {
       />
 
       <div className='main__filtered'>
-        <FilterInput />
+        <FilterInput
+          placeholder='Filter by name...'
+          value={filterValue}
+          onChange={setFilterValue}
+          icon={<Search />}
+          size='big'
+        />
         <Select
           placeholder='Species'
           options={SPECIES_OPTIONS}
