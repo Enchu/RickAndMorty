@@ -61,7 +61,7 @@ const CharacterCard = ({
           <p>Status</p>
           <div className='character__status'>
             <h3>{status}</h3>
-            <Status status={status} />
+            <Status status={status.toLowerCase()} />
           </div>
         </div>
         <Edit className='character__info-edit' />
