@@ -1,4 +1,4 @@
-import { CharacterCard } from '@/shared/components';
+import { CharacterCard } from '@/widgets';
 
 import './MainList.css';
 

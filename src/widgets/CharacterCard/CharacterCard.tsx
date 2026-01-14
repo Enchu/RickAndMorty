@@ -1,10 +1,10 @@
 import { useNavigate } from 'react-router-dom';
 
+import { Edit } from '@/assets';
 import Media from '@/assets/icons/Media.png';
+import { Status } from '@/shared/components';
 
-import Status from '../Status/Status';
-
-import './CharacterCard.css';
+import './CharacterCard.scss';
 
 export const Gender = {
   male: 'Male',
@@ -31,10 +31,7 @@ const CharacterCard = ({
   const navigate = useNavigate();
 
   return (
-    <div
-      className='character'
-      onClick={() => navigate('/info')}
-    >
+    <div className='character'>
       <div className='character__image'>
         <img
           src={Media}
@@ -42,7 +39,12 @@ const CharacterCard = ({
         />
       </div>
       <div className='character__info'>
-        <h2 className='character__name'>{title}</h2>
+        <h2
+          className='character__name'
+          onClick={() => navigate('/info')}
+        >
+          {title}
+        </h2>
         <div className='character__info-item'>
           <p>Gender</p>
           <h3>{gender}</h3>
@@ -59,9 +61,10 @@ const CharacterCard = ({
           <p>Status</p>
           <div className='character__status'>
             <h3>{status}</h3>
-            <Status status={status} />
+            <Status status={status.toLowerCase()} />
           </div>
         </div>
+        <Edit className='character__info-edit' />
       </div>
     </div>
   );
